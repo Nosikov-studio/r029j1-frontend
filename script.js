@@ -39,7 +39,13 @@ const f = document.querySelector('f')
 
 function datas() {
 
-fetch('http://truruki.ru/test')
+fetch('http://85.28.47.165:40444/test', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      },    
+    credentials: 'include', //чтобы браузер принял куки от сервера и отправлял их в последующих запросах
+  }))
     .then(response => response.json())
     .then(j => {
       const html = j.massage;
