@@ -23,7 +23,8 @@ const secretField = document.getElementById('secretField');
     .then(response => response.json())
     .then(j => {
       console.log(j);          
-    secretField.style.display = 'block';  // Показываем скрытое поле
+    secretField.style.display = 'block';      // Показываем скрытое поле
+    secretField.textContent = j.message;
       form1.reset(); // очищаем форму
     });
   });
