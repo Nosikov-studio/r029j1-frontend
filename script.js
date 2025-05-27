@@ -5,7 +5,7 @@ const form1 = document.getElementById('form1');
 const secretField1 = document.getElementById('secretField1');
 const secretField2 = document.getElementById('secretField2');
 const butt = document.getElementById('btn');
-const f = document.querySelector('f')
+const f =document.getElementById('f')
 
 
   form1.addEventListener('submit', function(event) {
@@ -44,7 +44,7 @@ fetch('http://85.28.47.165:40444/test', {
     headers: {
       'Content-Type': 'application/json',
       },    
-    credentials: 'include', //чтобы браузер принял куки от сервера и отправлял их в последующих запросах
+    credentials: 'include', //куки 
   })
     .then(response => response.json())
     .then(j => {
