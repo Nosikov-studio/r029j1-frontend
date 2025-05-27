@@ -16,7 +16,7 @@ const form1 = document.getElementById('form1');
     body: JSON.stringify({
       ...FormDataObject,
       views: 0,
-    })
+    }), credentials: 'include' // если нужно
   })
     .then(response => response.json())
     .then(j => {
