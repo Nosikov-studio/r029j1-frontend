@@ -39,7 +39,7 @@ const f =document.getElementById('f')
 
 function datas() {
 
-fetch('http://truruky.ru:40444/test', {
+fetch('http://truruky.ru/test', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
