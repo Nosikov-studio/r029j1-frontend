@@ -17,11 +17,12 @@ const form1 = document.getElementById('form1');
       ...FormDataObject,
       views: 0,
     }),
-  credentials: 'include',
+  credentials: 'include', //чтобы браузер принял куки от сервера и отправлял их в последующих запросах
   })
     .then(response => response.json())
     .then(j => {
-      console.log(j);      
+      console.log(j);          
+    secretField.style.display = 'block';  // Показываем скрытое поле
       form1.reset(); // очищаем форму
     });
   });
