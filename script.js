@@ -2,6 +2,7 @@
 
 //************************************************************************* */
 const form1 = document.getElementById('form1');
+const secretField = document.getElementById('secretField');
   form1.addEventListener('submit', function(event) {
     event.preventDefault();
 
