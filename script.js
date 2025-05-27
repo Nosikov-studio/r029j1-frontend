@@ -48,7 +48,7 @@ fetch('http://85.28.47.165:40444/test', {
   })
     .then(response => response.json())
     .then(j => {
-      const html = j.massage;
+      const html = j.message;
       f.innerHTML =`<p> ${html} </p>`})
 }
 
