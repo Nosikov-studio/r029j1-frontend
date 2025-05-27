@@ -2,7 +2,8 @@
 
 //************************************************************************* */
 const form1 = document.getElementById('form1');
-const secretField = document.getElementById('secretField');
+const secretField1 = document.getElementById('secretField1');
+const secretField2 = document.getElementById('secretField2');
   form1.addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -23,8 +24,8 @@ const secretField = document.getElementById('secretField');
     .then(response => response.json())
     .then(j => {
       console.log(j);          
-    secretField.style.display = 'block';      // Показываем скрытое поле
-    secretField.textContent = j.message;
+    secretField1.style.display = 'block';      // Показываем скрытое поле
+    secretField2.textContent = j.message;
       form1.reset(); // очищаем форму
     });
   });
