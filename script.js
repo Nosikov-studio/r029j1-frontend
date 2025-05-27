@@ -4,6 +4,10 @@
 const form1 = document.getElementById('form1');
 const secretField1 = document.getElementById('secretField1');
 const secretField2 = document.getElementById('secretField2');
+const butt = document.getElementById('btn');
+const f = document.querySelector('f')
+
+
   form1.addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -31,3 +35,15 @@ const secretField2 = document.getElementById('secretField2');
     });
   });
 
+//////////////////////////////////////////////////////////////
+
+function datas() {
+
+fetch('http://truruki.ru/test')
+    .then(response => response.json())
+    .then(j => {
+      const html = j.massage;
+      f.innerHTML =`<p> ${html} </p>`})
+}
+
+butt.addEventListener('click', datas);
