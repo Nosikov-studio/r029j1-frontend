@@ -24,7 +24,8 @@ const secretField2 = document.getElementById('secretField2');
     .then(response => response.json())
     .then(j => {
       console.log(j);          
-    secretField1.style.display = 'block';      // Показываем скрытое поле
+    secretField1.style.display = 'block';      // Показываем скрытое поле 1
+    secretField2.style.display = 'block';     // Показываем скрытое поле 2
     secretField2.textContent = j.message;
       form1.reset(); // очищаем форму
     });
