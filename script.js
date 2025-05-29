@@ -14,7 +14,7 @@ const f =document.getElementById('f')
   const formData = new FormData(form1); // Сбор данных формы
   const FormDataObject = Object.fromEntries(formData);
 
-  fetch('http://85.28.47.165:40444/login', {
+  fetch('https://truruki.ru/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ const f =document.getElementById('f')
 
 function datas() {
 
-fetch('http://85.28.47.165:40444/test', {
+fetch('https://truruki.ru/test', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
